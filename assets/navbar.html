@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Comely</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    nav {
+      background-color: #e91e63; /* DeepPink */
+      padding: 10px 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      font-family: sans-serif;
+    }
+
+    .top-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .left-logo h1 {
+      color: #fdfdfd;
+      margin-right: 20px;
+    }
+
+    .search-bar {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .search-bar input {
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .right-group {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .right-group a {
+      text-decoration: none;
+      color: #fdfdfd;
+      font-weight: bold;
+    }
+
+    .right-group a:hover {
+      color: pink;
+    }
+
+    .bottom-row {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      font-size: 15px;
+      text-decoration: none;
+      padding: 20px;
+      color: #fdfdfd;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: pink;
+    }
+
+    @media (max-width: 768px) {
+      .top-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .right-group {
+        flex-direction: row;
+      }
+
+      .bottom-row {
+        margin-top: 15px;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <!-- First Line -->
+    <div class="top-row">
+      <div class="left-logo">
+        <h1>Comely</h1>
+      </div>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Search for products...">
+      </div>
+
+      <div class="right-group">
+        <a href="#" >USER</a>
+        <a href="">CART</a>
+      </div>
+    </div>
+
+    <!-- Second Line -->
+    <div class="bottom-row">
+      <ul class="nav-links">
+        <li><a href="">HOME</a></li>
+        <li><a href="">PRODUCTS</a></li>
+        <li><a href="">TRENDS</a></li>
+        <li><a href="">HELP</a></li>
+      </ul>
+    </div>
+  </nav>
+
+</body>
+</html>
